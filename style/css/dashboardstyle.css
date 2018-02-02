@@ -1,0 +1,43 @@
+body.dashboard{background: #18191c; font-family: "Microsoft YaHei";font-size: 14px;margin: 0;padding: 0;}
+
+.d-head{width: 100%;height: 60px;}
+.d-head h1{font-size: 28px;font-family: "SimHei"; color: #fd9c37;margin: 0;height: 60px;padding: 0 30px;line-height: 60px;display: inline-block;}
+.d-head-tab{float: right;margin: 0;padding: 20px 20px 0 0;}
+.d-head-tab li{display: inline-block;padding: 0 15px;}
+.d-head-tab li:first-child{border-right: 1px solid #f6a828;}
+.d-head-tab li a{font-size: 16px;color: #8f959c;text-decoration:none;}
+.d-head-tab li.current a{color: #f6a828}
+
+.d-infdiv{width: 100%;height: 40px;background: #0f0f0f;}
+.d-inflst{margin: 0;padding: 0 0 0 30px;height: 40px;line-height: 40px;}
+.d-inflst li{display: inline-block;font-size: 14px;color: #efa82d;margin-right: 30px;}
+.d-inflst li b{display: inline-block;color: #fff;font-weight: normal;margin-right: 5px;}
+
+.d-warp{padding: 15px 30px 4px;}
+.d-warp .d-innerwarp{width: 30%;display: inline-block;background: #1b1b1e; border-radius: 4px;margin-right: 0.4%;margin-bottom: 8px;}
+.d-warp .d-innerwarp:nth-child(3n){margin-right: 0}
+.d-warp-row1, .d-warp-row2, .d-warp-row3{width: 100%;display: flex;flex-wrap:nowrap; justify-content: space-between;}
+.d-warp-row1 .d-innerwarp:last-child{width: 39.2%;}
+.d-warp-row2 .d-innerwarp:last-child{width: 39.2%;}
+.d-warp-row3 .d-innerwarp{width: 19.4%;}
+.d-warp-row3 .d-innerwarp:first-child{width: 60.4%;}
+.d-innerwarp h3{height: 35px;width: 100%; line-height: 35px;background: #252525;color: #fff;margin: 0;padding-left: 20px;box-sizing: border-box; font-weight: normal;font-size: 14px;}
+
+.d-content{padding: 20px 15px 5px;}
+
+.invade-lst{margin: 0;padding: 0;display: flex;justify-content: space-between;flex-wrap: nowrap;}
+.invade-lst li{width: 24%;list-style-type: none;}
+.invade-card{background: #282828;border: 2px solid #2a2a2a;border-radius: 2px;position: relative;}
+.invade-card img{width: 76%;margin: 10% 12%;}
+.invade-card span{position: absolute;right: 0;bottom: 0;display: block;background: url(../images/trangle.png) no-repeat center;background-size:  100%;color: #f69a3b; font-size: 12px;width: 42%;height: 42%;box-sizing: border-box;padding: 23% 0 0 17%;}
+
+.invade-inf{text-align: center;}
+.invade-inf b{font-weight: normal;color: #26a1e6;font-size: 16px;display: block;line-height: 36px;}
+.invade-inf p{margin: 0;font-size: 14px;color: #99a0a7;padding: 0 15px;text-align: left;}
+.invade-inf p span{color: #7c7c7c;display: inline-block;margin-left: 5px}
+.invade-inf p s{color: #ed1212;display: inline-block;text-decoration: none;margin-left: 5px}
+
+@media (min-width:1367px){
+	.invade-card{height: 150px;}
+	.invade-card span{width: 35%;height: 35%; padding: 20% 0 0 15%;}
+}

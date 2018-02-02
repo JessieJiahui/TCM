@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>告警管理</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../style/css/stylenew.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper white-wrapper">
+
+  <header class="main-header">
+    <a href="GIS-control.html" class="logo">
+      <span class="logo-mini"></span>
+      <span class="logo-lg"><b>Ultra_</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+     	<h1>城市综合管廊安防通信一体化系统</h1>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cloud"></i>28</a>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">2017-5-24</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 周三</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 10:23</a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../style/images/user-profi.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Hi,你好</span><i class="fa fa-caret-down"></i>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off text-yellow"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+     	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"></a>
+      <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i><span>集中监控</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="GIS-control.html">GIS监控</a></li>
+            <li ><a href="javascript:void(0)">分仓监控</a></li>
+            <li ><a href="javascript:void(0)">防火区监控</a></li>
+            <li ><a href="javascript:void(0)">报警管理</a></li>
+            <li ><a href="javascript:void(0)">报警规则管理</a></li>
+            <li ><a href="javascript:void(0)">联动规则管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="altermanage.html">
+            <i class="fa fa-bell"></i><span>告警管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-road"></i><span>日常管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="enterapply.html">入廊申请</a></li>
+            <li><a href="partymanage.html">施工单位</a></li>
+            <li><a href="terminalmanage.html">终端管理</a></li>
+            <li><a href="snapshot.html">施工快照</a></li>
+            <li><a href="entermanage.html">出入管理</a></li>
+            <li><a href="message.html">消息历史</a></li>
+            <li><a href="communicate.html">通信管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-road"></i><span>运维管理</span>
+                  <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+              </a><ul class="treeview-menu">
+                  <li><a href="pollingtask.html">巡检任务管理</a> </li>
+                  <li><a href="pollingresult.html">巡检结果管理</a> </li>
+                  <li><a href="pollingitem.html">巡检设置</a> 
+                      <ul class="treeview-menu">
+                          <li><a href="pollingitem.html">巡检条目管理</a> </li>
+                          <li><a href="pollingpoint.html">巡检点管理</a> </li>
+                          <li><a href="pollingroute.html">巡检路线管理</a> </li>
+                          
+                      </ul>
+                  </li>
+                  <li><a href="pollingplan.html">巡检计划管理</a> </li>
+                  <li><a href="pollingtask2.html">巡检任务监测</a> </li>
+              </ul>
+        </li>
+        <li class="treeview">
+          <a href="basicinf.html">
+            <i class="fa fa-cubes"></i><span>管廊基本信息</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+         
+        </li>
+        <li class="treeview ">
+          <a href="dataanalyse.html">
+            <i class="fa fa-pie-chart"></i><span>数据分析</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+ </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-th"></i><span>系统管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+          </ul>
+		  </li> 
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-red"></i><span>应急</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-yellow"></i><span>报警</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-blue"></i><span>施工中</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-green"></i><span>维护中</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+		  告警信息
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box no-border bg-white">
+            <div class="box-header">
+				  <ul class="inf-tips">
+					<li><i class="fa fa-square label-serious"></i><a href="#">严重(0)</a></li>
+					<li><i class="fa fa-square label-main"></i><a href="#">主要(0)</a></li>
+					<li><i class="fa fa-square label-second"></i><a href="#">次要(0)</a></li>
+					<li><i class="fa fa-square label-warning"></i><a href="#">警告(0)</a></li>
+					<li><i class="fa fa-square label-unsure"></i><a href="#">未确认(0)</a></li>
+					<li><i class="fa fa-square label-unsure2"></i><a href="#">已清除未确认(0)</a></li>
+				  </ul>
+          		  
+           		<div class="input-group input-group-sm fr" style="width: 250px;">
+					<input type="text" name="table_search" class="form-control pull-right bg-white" placeholder="请输入查询内容">
+					<div class="input-group-btn">
+						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+           		<div class="select" style="width: 200px">
+            		 <p><span>请选择</span><a href="#" class="fa fa-angle-down"></a></p>
+                	 <ul><li>燃气二公司</li><li>中铁建一局</li></ul>
+            	  </div>
+            </div>
+            
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-color">
+               <thead>
+               		<tr class="none-border">
+              		  <th style="width: 40px">&nbsp;</th>
+               		  <th>类型</th>
+               		  <th>标题</th>
+					  <th>状态</th>
+					  <th>级别</th>
+					  <th>次数</th>
+					  <th>最后发生时间</th>
+					  <th style="min-width: 230px">告警源(对象)</th>
+					  <th>所在位置</th>
+					</tr>
+               </thead>
+               <tbody>
+               		 <tr>
+               		  <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>人员驻留过久告警</td>
+					  <td class="text-yellow" onClick="Warning()">当前人员已经连续逗留6小时</td>
+					  <td>未确认</td>
+					  <td><span class="label label-main">主要</span></td>
+					  <td>4</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>身份卡（电力公司-电力施工队-张三</td>
+					  <td>防火区05-电力仓</td>
+					</tr>
+					<tr>
+				      <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>人员拥挤告警</td>
+					  <td class="text-yellow">002#防火段-电力仓人数超过30人</td>
+					  <td>已确认</td>
+					  <td><span class="label label-second">次要</span></td>
+					  <td>4</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>防火区023#-电力舱5</td>
+					  <td>防火区05-电力仓</td>
+					</tr>
+					<tr>
+				      <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>智慧线基站告警</td>
+					  <td class="text-yellow">未知人员入侵</td>
+					  <td>已发工单</td>
+					  <td><span class="label label-serious">严重</span></td>
+					  <td>24</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>防火区05-热力仓</td>
+					  <td>防火区05-电力仓</td>
+					</tr>
+					<tr>
+				      <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>智慧线基站告警</td>
+					  <td class="text-yellow">未知人员入侵</td>
+					  <td>已发工单</td>
+					  <td><span class="label label-warning">警告</span></td>
+					  <td>24</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>防火区05-热力仓</td>
+					  <td>防火区05-电力仓</td>
+				    </tr>
+				    <tr>
+					  <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>智慧线基站告警</td>
+					  <td class="text-yellow">未知人员入侵</td>
+					  <td>已发工单</td>
+					  <td><span class="label label-unsure">未确认</span></td>
+					  <td>24</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>防火区05-热力仓</td>
+					  <td>防火区05-电力仓</td>
+					</tr>
+              		<tr>
+					  <td class="checkbox-inline"><div class="choose-radio"><span class="check_box checked"></span></div></td>
+					  <td>智慧线基站告警</td>
+					  <td class="text-yellow">未知人员入侵</td>
+					  <td>已发工单</td>
+					  <td><span class="label label-unsure2">已清除未确认</span></td>
+					  <td>24</td>
+					  <td>2017-05-03 12:14:25</td>
+					  <td>防火区05-热力仓</td>
+					  <td>防火区05-电力仓</td>
+					</tr>
+               </tbody>
+               
+                
+              </table>
+               <div class="pages_os"><ul><li class="shouye disable_os" style="display:none;"><a href="javascript:void(0);">首页</a></li><li class="prev_os disable_os"><a href="javascript:void(0);">&lt;</a></li><li class="preososos_os" style="display:none;"><a href="javascript:void(0);">...</a></li><li class="page_label current" id="page_label_ele_1"><a href="javascript:void(0);">1</a></li><li class="page_label" id="page_label_ele_2"><a href="javascript:void(0);">2</a></li><li class="page_label" id="page_label_ele_3" style="display: inline-block;"><a href="javascript:void(0);">3</a></li><li class="page_label" id="page_label_ele_4" style="display: inline-block;"><a href="javascript:void(0);">4</a></li><li class="page_label" id="page_label_ele_5" style="display: inline-block;"><a href="javascript:void(0);">5</a></li><li class="page_label" id="page_label_ele_6" style="display: inline-block;"><a href="javascript:void(0);">6</a></li><li class="page_label" id="page_label_ele_7" style="display: inline-block;"><a href="javascript:void(0);">7</a></li><li class="page_label" id="page_label_ele_8" style="display: inline-block;"><a href="javascript:void(0);">8</a></li><li class="ellipsis_os" style="display:inline-block;"><a href="javascript:void(0);">...</a></li><li class="next_os"><a href="javascript:void(0);">&gt;</a></li><li class="moye" style="display:none;"><a href="javascript:void(0);">末页</a></li></ul><span class="pages_tips">共<s>30</s>条记录</span>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      
+      <!-- /.row -->
+      
+    </section>
+    <!-- /.content -->
+    
+  </div>
+  
+
+</div>
+<!-- ./wrapper -->
+<div id="fade" class="black-overlay" ></div>
+<div class="white-content warning">
+           <h2>告警<span class="close1" onclick ="closeWarning()"></span></h2> 
+           <div class="content tab">
+				<div class="nav-tabs-custom">
+					<!-- Tabs within a box -->
+					<ul class="nav nav-tabs pull-left">
+					  <li><a href="#revenue-chart" data-toggle="tab">告警信息</a></li>
+					  <li class="active"><a href="#sales-chart" data-toggle="tab">通知信息</a></li>
+					</ul>
+					<div class="tab-content no-padding">
+					  <!-- Morris chart - Sales -->
+					  <div class="chart tab-pane" id="revenue-chart">
+					  	<ul class="inf-lst">
+					  		<li><label>告警编号</label><b>-----------</b></li>
+					  		<li><label>开始时间</label><b></b></li>
+					  		<li><label>告警类别</label><b></b></li>
+					  		<li><label>告警级别</label><b></b></li>
+					  		<li><label>告警位置</label><b></b></li>
+					  		<li><label>告警详情</label><b></b></li>
+					  		<li><label>告警次数</label><b></b></li>
+					  		<li><label>时间状态</label><b></b></li>
+					  		<li><label>工单状态</label><b></b></li>
+					  	</ul>
+					  	<div class="choosebtn">
+							<a href = "javascript:void(0)" onclick ="openSure()" class="save">确认</a>
+							<a href = "javascript:void(0)" onclick ="openClear()" class="cancel">清除</a>
+						</div>	
+					  </div>
+					  <div class="chart tab-pane active" id="sales-chart">
+					  	<h3>通知人：</h3>
+					  	<div class="inf-btn">
+							<a href = "javascript:void(0)">告警所在舱室</a>
+							<a href = "javascript:void(0)">同施工队</a>
+					   	</div>
+						   <div class="box-tools">
+								<div class="input-group input-group-sm" style="width: 150px;">
+								  <input type="text" name="table_search" class="form-control pull-right text-white" placeholder="请输入查询内容">
+								  <div class="input-group-btn">
+									<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+								  </div>
+								</div>
+						   </div>
+						   <div>
+								<table class="table table-striped mt10">
+								   <thead>
+										<tr class="none-border">
+									  	  <th>#</th>
+										  <th>设备编号</th>
+										  <th>姓名</th>
+										  <th>所属单位</th>
+										  <th>所属组织</th>
+										  <th>当前位置</th>
+										  <th>停留时间(m)</th>
+										  <th>电话</th>
+										</tr>
+								   </thead>
+								   <tbody>
+										 <tr>
+										  <td class="checkbox-inline"><label><input type="checkbox"></label></td>
+										  <td>55555</td>
+										  <td>张三</td>
+										  <td>管道集团</td>
+										  <td>电力一队</td>
+										  <td>热力舱03#防火区1</td>
+										  <td class="text-red">123</td>
+										  <td>123456789</td>
+										</tr>
+										<tr>
+										  <td class="checkbox-inline"><label><input type="checkbox"></label></td>
+										  <td>55555</td>
+										  <td>张三</td>
+										  <td>管道集团</td>
+										  <td>电力一队</td>
+										  <td>热力舱03#防火区1</td>
+										  <td class="text-red">123</td>
+										  <td>123456789</td>
+										</tr>
+										<tr>
+										  <td class="checkbox-inline"><label><input type="checkbox"></label></td>
+										  <td>55555</td>
+										  <td>张三</td>
+										  <td>管道集团</td>
+										  <td>电力一队</td>
+										  <td>热力舱03#防火区1</td>
+										  <td class="text-red">123</td>
+										  <td>123456789</td>
+										</tr>
+										<tr><td colspan="8" align="center" class="bb0">该项无可显示数据</td></tr>
+								   </tbody>
+							  </table>
+						   </div>	
+						   <div class="content"><textarea></textarea><span class="wordtips">还可输入124个字符</span></div>
+						   <div class="choosebtn">
+								<a href = "javascript:void(0)" onclick ="closeWarning()" class="save">发送</a>
+							</div>
+					  </div>
+					</div>
+					
+				</div>
+           </div>
+           
+       </div>
+<div class="white-content warning-sure">
+      		<h2>确认告警<span class="close1" onclick ="closeDiv()"></span></h2>
+      		<div class="content">
+      			<p>确认类型</p>
+				<div class="select">
+            		<p><span>--</span><a href="#" class="fa fa-angle-down"></a></p>
+                	<ul><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li></ul>
+            	</div>
+      		</div>
+      		<div class="content"><p>确认备注</p><textarea></textarea><span class="wordtips">还可输入136个字符</span></div>
+      	    <div class="choosebtn">
+					<a href = "javascript:void(0)" onclick ="closeDiv()" class="save">发送</a>
+					<a href = "javascript:void(0)" onclick ="closeDiv()" class="cancel">取消</a>
+			</div>
+</div>
+<div class="white-content warning-clear">
+      		<h2>清除告警<span class="close1" onclick ="closeDiv()"></span></h2>
+      		<div class="content">
+      			<p>清除类型</p>
+				<div class="select">
+            		<p><span>--</span><a href="#" class="fa fa-angle-down"></a></p>
+                	<ul><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li><li>1</li><li>2</li></ul>
+            	</div>
+      		</div>
+      		<div class="content"><p>清除备注</p><textarea></textarea><span class="wordtips">还可输入136个字符</span></div>
+      	    <div class="choosebtn">
+					<a href = "javascript:void(0)" onclick ="closeDiv()" class="save">发送</a>
+					<a href = "javascript:void(0)" onclick ="closeDiv()" class="cancel">取消</a>
+			</div>
+</div>
+
+<!--QR Scan-->
+<div class="ico-QR QR1"></div>
+<div class="ico-QR QR2"></div>
+<div class="ico-QR-big"><img src="../style/images/ico-OR2.png"></div>
+
+<!-- jQuery 2.2.3 -->
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- Slimscroll -->
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+
+<!-- FastClick -->
+<script src="../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<script src="../style/js/jsnew.js"></script>
+<script src="../style/js/scrollbar.js"></script>
+</body>
+</html>

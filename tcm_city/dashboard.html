@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="style/css/dashboardstyle.css" type="text/css">
+  <script src="style/js/jquery-1.9.1.min.js"></script>
+  <script src="style/js/d-js.js"></script>
+</head>
+<body class="dashboard">
+	<div class="d-head">
+		<h1>城市综合管廊安防通信一体化系统</h1>
+		<ul class="d-head-tab"><li class="current"><a href="#">运行概况</a></li><li><a href="#">智慧线运行监测</a></li></ul>
+	</div>
+	<div class="d-infdiv">
+		<ul class="d-inflst">
+			<li><b>管廊名称：</b>未来科技城综合管廊</li>
+			<li><b>长度：</b>4.9公里</li>
+			<li><b>当前廊内人数：</b>3人</li>
+			<li><b>安全生产：</b>795天</li>
+		</ul>
+	</div>
+	<div class="d-warp">
+		<div class="d-warp-row1">
+			<div class="d-innerwarp">
+				<h3>人员出入分时统计</h3>
+				<div class="d-content d-time-count"><img src="style/images/chart1.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>人员分单位统计</h3>
+				<div class="d-content d-party-count"><img src="style/images/chart2.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>入侵检测</h3>
+				<div class="d-content d-invade">
+					<ul class="invade-lst">
+						<li>
+							<div class="invade-card"><img src="style/images/d-ico1.png"><span>正常</span></div>
+							<div class="invade-inf">
+								<b>电力1舱</b>
+								<p>入侵告警:<span>已解决</span></p>
+							</div>
+						</li>
+						<li>
+							<div class="invade-card"><img src="style/images/d-ico1.png"><span>正常</span></div>
+							<div class="invade-inf">
+								<b>电力2舱</b>
+								<p>入侵告警:<span>已解决</span></p>
+							</div>
+						</li>
+						<li>
+							<div class="invade-card"><img src="style/images/d-ico2.png"><span>正常</span></div>
+							<div class="invade-inf">
+								<b>水信舱</b>
+								<p>入侵告警:<s>1</s><span>已解决</span></p>
+                                <p>原因:<span>忘带身份卡</span></p>
+							</div>
+						</li>
+						<li>
+							<div class="invade-card"><img src="style/images/d-ico3.png"><span>正常</span></div>
+							<div class="invade-inf">
+								<b>热力舱</b>
+								<p>入侵告警:<span>已解决</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="d-warp-row2">
+			<div class="d-innerwarp">
+				<h3>人数分区域统计</h3>
+				<div class="d-content d-area-count"><img src="style/images/chart3.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>人数 - 防火段分布图</h3>
+				<div class="d-content d-num-chart"><img src="style/images/chart4.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>管廊快照数量分防火分区统计</h3>
+				<div class="d-content d-snapshot-count"><img src="style/images/chart5.png" width="90%"></div>
+			</div>
+		</div>
+		<div class="d-warp-row3">
+			<div class="d-innerwarp">
+				<h3>数据业务流量趋势图</h3>
+				<div class="d-content d-flow-chart"><img src="style/images/chart6.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>通话次数分类分舱统计</h3>
+				<div class="d-content d-contact-count"><img src="style/images/chart7.png" width="90%"></div>
+			</div>
+			<div class="d-innerwarp">
+				<h3>短消息分类分舱统计</h3>
+				<div class="d-content d-message-count"><img src="style/images/chart8.png" width="90%"></div>
+			</div>
+		</div>
+	</div>
+
+<div class="dashboard_wrap" id="col8" style="display:none;">
+	<div class="dashbord_fix"></div>
+    <div class="dashbord_pop">
+    <h2>人员出入分时统计<a class="close" href="javascript:void();"></a></h2>
+    <div class="dashbord_table">
+    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+        	<tr>
+            	<th>姓名/卡号</th>
+                <th>人员类型</th>
+                <th>进入时间</th>
+                <th>离开时间</th>
+                <th>持续时间</th>
+                <th>舱室</th>
+                <th>分区</th>
+                <th>单信</th>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+            <tr>
+            	<td>王志浩</td>
+                <td>核心人员</td>
+                <td>9:32:42</td>
+                <td>9:44:11</td>
+                <td>0:11:34</td>
+                <td>电力2舱</td>
+                <td>09防火分区</td>
+                <td>未来科技城</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+
+<div class="dashboard_wrap" id="col5" style="display:block;">
+	<div class="dashbord_fix"></div>
+    <div class="dashbord_pop">
+    <h2>对应详情表<a class="close" href="javascript:void();"></a></h2>
+    <div class="dashbord_table">
+    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+        	<tr>
+            	<th>时间</th>
+                <th>舱室</th>
+                <th>拨打类型</th>
+                <th>主叫人员</th>
+                <th>被叫人员</th>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>廊内互拔</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+            <tr>
+                <td>9:32:42</td>
+                <td>电力一舱</td>
+                <td>地面拔打廊内</td>
+                <td>张照光</td>
+                <td>李明</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

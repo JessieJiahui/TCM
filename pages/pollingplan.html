@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>巡检计划</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../style/css/stylenew.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper white-wrapper">
+
+  <header class="main-header">
+    <a href="GIS-control.html" class="logo">
+      <span class="logo-mini"></span>
+      <span class="logo-lg"><b>Ultra_</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+     	<h1>城市综合管廊安防通信一体化系统</h1>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cloud"></i>28</a>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">2017-5-24</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 周三</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 10:23</a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../style/images/user-profi.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Hi,你好</span><i class="fa fa-caret-down"></i>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off text-yellow"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+     	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"></a>
+      <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i><span>集中监控</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="GIS-control.html">GIS监控</a></li>
+            <li ><a href="javascript:void(0)">分仓监控</a></li>
+            <li ><a href="javascript:void(0)">防火区监控</a></li>
+            <li ><a href="javascript:void(0)">报警管理</a></li>
+            <li ><a href="javascript:void(0)">报警规则管理</a></li>
+            <li ><a href="javascript:void(0)">联动规则管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="altermanage.html">
+            <i class="fa fa-bell"></i><span>告警管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-road"></i><span>日常管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="enterapply.html">入廊申请</a></li>
+            <li><a href="partymanage.html">施工单位</a></li>
+            <li><a href="terminalmanage.html">终端管理</a></li>
+            <li><a href="snapshot.html">施工快照</a></li>
+            <li><a href="entermanage.html">出入管理</a></li>
+            <li><a href="message.html">消息历史</a></li>
+            <li><a href="communicate.html">通信管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+              <a href="#">
+                  <i class="fa fa-road"></i><span>运维管理</span>
+                  <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="pollingtask.html">巡检任务管理</a> </li>
+                  <li><a href="pollingresult.html">巡检结果管理</a> </li>
+                  <li class="active"><a href="pollingitem.html">巡检设置</a> 
+                      <ul class="treeview-menu">
+                          <li><a href="pollingitem.html">巡检条目管理</a> </li>
+                          <li><a href="pollingpoint.html">巡检点管理</a> </li>
+                          <li class="active"><a href="pollingroute.html">巡检路线管理</a> </li>
+                          
+                      </ul>
+                  </li>
+                  <li><a href="pollingplan.html">巡检计划管理</a> </li>
+                  <li><a href="pollingtask2.html">巡检任务监测</a> </li>
+              </ul>
+        </li>
+        <li class="treeview">
+          <a href="basicinf.html">
+            <i class="fa fa-cubes"></i><span>管廊基本信息</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+         
+        </li>
+        <li class="treeview ">
+          <a href="dataanalyse.html">
+            <i class="fa fa-pie-chart"></i><span>数据分析</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+ </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-th"></i><span>系统管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+          </ul>
+		  </li> 
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-red"></i><span>应急</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-yellow"></i><span>报警</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-blue"></i><span>施工中</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-green"></i><span>维护中</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+   <section class="content-header">
+      <div class="location"><a href="#">运维管理</a> > <a href="#">巡检管理</a> > <span>巡检计划管理</span></div>
+      <h1> 巡检计划管理</h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row pplan">
+        <div class="col-md-12">
+         	<div class="box-tools p10">
+           		<a href="#" class="btn">Today</a>
+           		<label class="til">2017年10月</label>
+           		<div class="btn-toolbar toolbar3">
+					<ul class="lst-btn"><li><i class="fa fa-angle-left"></i></li><li><i class="fa fa-angle-right"></i></li></ul>
+				</div>
+           		<div class="btn-toolbar toolbar2">
+					<ul class="lst-btn"><li class="current" onclick="location.href='pollingplan.html';">日历</li><li onclick="location.href='pollingplan2.html';">列表</li></ul>
+				</div>
+            	<div class="btn-toolbar toolbar1">
+					<ul class="lst-btn"><li >月</li><li>周</li><li  class="current" >天</li></ul>
+				</div>
+				
+				
+		   </div>
+          <div class="box no-border bg-white mt10">
+           
+            <div class="box-body polling">
+            	
+            	
+             <div class="mt10">
+             <div class="p-left3">
+              <table class="table table-color pplan">
+               <thead>
+               		<tr class="none-border">
+              		  
+               		  <th>周日</th>
+               		  <th>周一</th>
+					  <th>周二</th>
+					  <th>周三</th>
+					  <th>周四</th>
+					  <th>周五</th>
+					  <th>周六</th>
+					 
+					 
+					</tr>
+               </thead>
+               <tbody>
+               		 <tr>
+					  <td><label class="date passed">27</label></td>
+					  <td><label class="date passed">28</label></td>
+					  <td><label class="date passed">29</label></td>
+					  <td><label class="date passed">30</label></td>
+					  <td class="current">
+					  	<label class="date">1</label>
+					  	<div class="inner">
+					  		<p><label class="btn1">廊内</label><span>3</span>个巡检计划</p>
+					  		<p><label class="btn2">地面</label><span>1</span>个巡检计划</p>
+					  	</div>
+					  </td>
+					  <td><label class="date">2</label></td>
+					  <td><label class="date">3</label></td>
+					</tr>
+					<tr>
+					  <td><label class="date">4</label></td>
+					  <td><label class="date">5</label></td>
+					  <td><label class="date">6</label></td>
+					  <td><label class="date">7</label></td>
+					  <td><label class="date">8</label></td>
+					  <td><label class="date">9</label></td>
+					  <td><label class="date">10</label></td>
+					  
+					</tr>
+					<tr>
+					 <td><label class="date">11</label></td>
+					  <td><label class="date">12</label></td>
+					  <td><label class="date">13</label></td>
+					  <td><label class="date">14</label></td>
+					  <td><label class="date">15</label></td>
+					  <td><label class="date">16</label></td>
+					  <td><label class="date">17</label></td>
+					</tr>
+					<tr>
+					   <td><label class="date">18</label></td>
+					  <td><label class="date">19</label></td>
+					  <td><label class="date">20</label></td>
+					  <td><label class="date">21</label></td>
+					  <td><label class="date">22</label></td>
+					  <td><label class="date">23</label></td>
+					  <td><label class="date">24</label></td>
+					</tr>
+					<tr>
+				  		<td><label class="date">25</label></td>
+					  <td><label class="date">26</label></td>
+					  <td><label class="date">27</label></td>
+					  
+					  <td><label class="date">28</label></td>
+					  <td><label class="date ">29</label></td>
+					  <td><label class="date">30</label></td>
+					  <td><label class="date">31</label></td>
+					 
+					  
+					</tr>
+					
+					
+					
+               </tbody>
+               
+                
+              </table>
+              </div>
+              <div class="p-right3">
+              	<h3>2017年10月8日</h3>
+              	<div class="content">
+              	<div class="inner" onClick="tipOpen()">
+              		<h4><span class="btn2">地面</span>电力1舱001-005段</h4>
+              		<ul>
+              			<li><label>巡检班组:</label>班组1/李达</li>
+              			<li><label>巡检内容:</label><p>管面本体</p><p>管面本体</p><p>管面本体</p><p><s class="tiny">电</s><s class="tiny">信</s><s class="tiny">污</s><s class="tiny">水</s><s class="tiny">热</s></p></li>
+              		</ul>
+              	</div>
+              	<div class="inner">
+              		<h4><span class="btn1">廊内</span>电力1舱001-005段</h4>
+              		<ul>
+              			<li><label>巡检班组:</label>班组1/李达</li>
+              			<li><label>巡检内容:</label><p>管面本体</p><p>管面本体</p><p>管面本体</p><p><s class="tiny">电</s><s class="tiny">信</s><s class="tiny">污</s><s class="tiny">水</s><s class="tiny">热</s></p></li>
+              		</ul>
+              	</div>
+              	</div>
+              </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      
+      <!-- /.row -->
+      
+    </section>
+    <!-- /.content -->
+    
+  </div>
+  
+
+</div>
+<!-- ./wrapper -->
+<div id="fade" class="black-overlay"></div>
+<div class="plantip plantip2">
+	<h3>巡检计划制定<span class="close1" onClick="tipClose()"></span></h3>
+	<div class="content">
+		<ul class="tip-lst2">
+			<li><label>路线类型</label><span class="radio_box"></span>管廊内巡检<span class="radio_box checked ml20"></span>地面巡检</li>
+			<li><label>巡检班组</label>
+				<div class="select">
+							<p><span>班组1</span><a href="#" class="fa fa-angle-down"></a></p>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+							</ul>
+				</div>
+			</li>
+			<li><label>巡检路线</label>
+				<div class="select">
+							<p><span>电力1舱</span><a href="#" class="fa fa-angle-down"></a></p>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+							</ul>
+				</div>
+			</li>
+			<li><label>巡检对象大类设置</label>
+				<p><span class="check_box checked"></span>管廊本体(一周三次)</p>
+				<p><span class="check_box checked"></span>附属设备(一周三次)</p>
+				<p><span class="check_box checked"></span>管线选择</p>
+				<p class="pl18"><span class="check_box "></span>电力电缆</p>
+				<p class="pl18"><span class="check_box"></span>通信电缆(四周一次)</p>
+				<p class="pl18"><span class="check_box checked"></span>热力管道</p>
+				<p class="pl18"><span class="check_box checked"></span>供水管道</p>
+				<p class="pl18"><span class="check_box"></span>污雨水/垃圾管道</p>
+				<p class="pl18"><span class="check_box checked"></span>天然气管道(两周一次)</p>
+			
+			</li>
+			<li><label>批量计划设置</label>
+				<div class="tab">
+					<ul class="tab-til">
+					  <li>人工设置</li>
+					  <li class="active">自动设置</li>
+					</ul>
+					<div class="tab-pane current">
+					  		<ul class="tip-lst3">
+					  			<li><label>巡检日期</label>
+					  				<div class="input-group input-medium date-picker input-daterange" data-date-format="yyyy-mm-dd">
+							    <input type="text" class="form-control" style="font-size: 13px;" readonly="" valiad="notNull" placeholder="">
+							    <span class="input-group-addon">至</span>
+							    <input type="text" class="form-control" style="font-size: 13px;" readonly="" valiad="notNull" placeholder="">
+					    </div>
+					  			</li>
+					  			<li><label>重复</label>
+					  				<div class="select">
+											<p><span>每日</span><a href="#" class="fa fa-angle-down"></a></p>
+											<ul>
+												<li>1</li>
+												<li>2</li>
+											</ul>
+								</div>
+					  			</li>
+					  		</ul>
+					  	
+					  </div>
+					  <div class="tab-pant" id="sales-chart">
+ 
+					  </div>
+				
+          		 </div>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+
+<!-- jQuery 2.2.3 -->
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- Slimscroll -->
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+
+<!-- FastClick -->
+<script src="../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<script src="../style/js/jsnew.js"></script>
+<script src="../style/js/scrollbar.js"></script>
+</body>
+</html>

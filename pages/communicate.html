@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>日常管理-通信管理</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../style/css/stylenew.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper white-wrapper">
+
+  <header class="main-header">
+    <a href="GIS-control.html" class="logo">
+      <span class="logo-mini"></span>
+      <span class="logo-lg"><b>Ultra_</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+     	<h1>城市综合管廊安防通信一体化系统</h1>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cloud"></i>28</a>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">2017-5-24</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 周三</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 10:23</a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../style/images/user-profi.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Hi,你好</span><i class="fa fa-caret-down"></i>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off text-yellow"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+     	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"></a>
+      <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i><span>集中监控</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="GIS-control.html">GIS监控</a></li>
+            <li ><a href="javascript:void(0)">分仓监控</a></li>
+            <li ><a href="javascript:void(0)">防火区监控</a></li>
+            <li ><a href="javascript:void(0)">报警管理</a></li>
+            <li ><a href="javascript:void(0)">报警规则管理</a></li>
+            <li ><a href="javascript:void(0)">联动规则管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="altermanage.html">
+            <i class="fa fa-bell"></i><span>告警管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-road"></i><span>日常管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="enterapply.html">入廊申请</a></li>
+            <li><a href="partymanage.html">施工单位</a></li>
+            <li><a href="terminalmanage.html">终端管理</a></li>
+            <li><a href="snapshot.html">施工快照</a></li>
+            <li><a href="entermanage.html">出入管理</a></li>
+            <li><a href="message.html">消息历史</a></li>
+            <li class="active"><a href="communicate.html">通信管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-road"></i><span>运维管理</span>
+                  <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+              </a><ul class="treeview-menu">
+                  <li><a href="pollingtask.html">巡检任务管理</a> </li>
+                  <li><a href="pollingresult.html">巡检结果管理</a> </li>
+                  <li><a href="pollingitem.html">巡检设置</a> 
+                      <ul class="treeview-menu">
+                          <li><a href="pollingitem.html">巡检条目管理</a> </li>
+                          <li><a href="pollingpoint.html">巡检点管理</a> </li>
+                          <li><a href="pollingroute.html">巡检路线管理</a> </li>
+                          
+                      </ul>
+                  </li>
+                  <li><a href="pollingplan.html">巡检计划管理</a> </li>
+                  <li><a href="pollingtask2.html">巡检任务监测</a> </li>
+              </ul>
+        </li>
+        <li class="treeview">
+          <a href="basicinf.html">
+            <i class="fa fa-cubes"></i><span>管廊基本信息</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+         
+        </li>
+        <li class="treeview ">
+          <a href="dataanalyse.html">
+            <i class="fa fa-pie-chart"></i><span>数据分析</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+ </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-th"></i><span>系统管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+          </ul>
+		  </li> 
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-red"></i><span>应急</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-yellow"></i><span>报警</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-blue"></i><span>施工中</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-green"></i><span>维护中</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+		  通信管理
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box-tools p10">
+            	<div class="btn-toolbar">
+					<ul class="lst-btn"><li class="current" onClick="part1()">通讯录</li><li onClick="part2()">话单查询</li></ul>
+				</div>
+				<div class="input-group input-group-sm fr" style="width: 250px;display: none;" >
+					<input type="text" name="table_search" class="form-control pull-right bg-white" placeholder="请输入查询内容">
+					<div class="input-group-btn">
+						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+		   </div>
+
+          <div class="box no-border bg-white mt10 communicate">
+           
+            <div class="box-body" id="communicate1">
+            	<div class="box-tools">
+            		<div class="choosebtn">
+						 <a href = "javascript:void(0)" class="newbtn">新增</a>
+					 </div> 
+					<div class="select-toolbar">
+					 <div class="piece">
+					 	<div class="select">
+            				<p><input type="text" placeholder="请选择或输入姓名"><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li>1</li>
+                    			<li>2</li>
+                    			<li>3</li>
+                    			<li>4</li>
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><input type="text" placeholder="请选择或输入号码"><a href="#" class="fa fa-angle-down"></a></p>
+               				<ul>
+                				<li>1</li>
+                    			<li>2</li>
+                    			<li>3</li>
+                    			<li>4</li>
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><span>请选择类型</span><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li>紧急通话座机</li>
+                    			<li>紧急通话备用座机</li>
+                    			<li>普通座机</li>
+                    			<li>OTG卡</li>
+                    			<li>座机外线</li>
+                    			<li>WEB电话</li>
+                    			<li>广播号码</li>
+                    			<li>后台服务号</li>
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><span>请选择优先级</span><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li>高</li>
+                    			<li>中</li>
+                    			<li>低</li>
+                    			
+                			</ul>
+            			</div>
+					 </div>
+					
+					 
+					</div>
+					<div class="choosebtn fr">
+						 <a href = "javascript:void(0)" class="searchbtn">查询</a>
+					 </div> 
+				</div>
+            	
+             <div class="mt10">
+              <table class="table table-color">
+               <thead>
+               		<tr class="none-border">
+               		  <th>序号</th>
+               		  <th>姓名</th>
+					  <th>号码</th>
+					  <th>类型</th>
+					  <th>优先级</th>
+					  <th>操作</th>
+					  
+					</tr>
+               </thead>
+               <tbody>
+               		 <tr>
+					  <td>1</td>
+					  <td>张三</td>
+					  <td>50001</td>
+					  <td>后台服务号</td>
+					  <td>高</td>
+					  <td><a href="#" class="text-blue mr10">修改</a><a href="#" class="text-blue">删除</a></td>
+					  
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>张三</td>
+					  <td>50001</td>
+					  <td>后台服务号</td>
+					  <td>高</td>
+					  <td><a href="#" class="text-blue mr10">修改</a><a href="#" class="text-blue">删除</a></td>
+					  
+					</tr>
+              <tr>
+					  <td>3</td>
+					  <td>张三</td>
+					  <td>50001</td>
+					  <td>后台服务号</td>
+					  <td>高</td>
+					  <td><a href="#" class="text-blue mr10">修改</a><a href="#" class="text-blue">删除</a></td>
+					  
+					</tr>
+               </tbody>
+               
+                
+              </table>
+              </div>
+            </div>
+            <div class="box-body" id="communicate2" style="display: none;">
+            	<div class="box-tools">
+            		<div class="datachoose"><input type="date" placeholder="请选择日期"></div>
+					<div class="select-toolbar">
+					 <div class="piece">
+					 	<div class="select">
+            				<p><input type="text" placeholder="请选择或输入主叫号码"><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li>1</li>
+                    			<li>2</li>
+                    			<li>3</li>
+                    			<li>4</li>
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><input type="text" placeholder="请选择或输入被叫号码"><a href="#" class="fa fa-angle-down"></a></p>
+               				<ul>
+                				<li>1</li>
+                    			<li>2</li>
+                    			<li>3</li>
+                    			<li>4</li>
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><span>请选择状态</span><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li>已应答</li>
+                    			<li>未应答</li>
+                    			<li>忙</li>
+                    			
+                			</ul>
+            			</div>
+					 </div>
+					 <div class="piece">
+					 	<div class="select">
+            				<p><span>请选择通话时长</span><a href="#" class="fa fa-angle-down"></a></p>
+                			<ul>
+                				<li><=20</li>
+                    			<li>>20</li>
+                    			
+                			</ul>
+            			</div>
+					 </div>
+					 
+					
+					 
+					</div>
+					<div class="choosebtn fr">
+						 <a href = "javascript:void(0)" class="searchbtn">查询</a>
+					 </div> 
+				</div>
+            	
+             <div class="mt10">
+              <table class="table table-color">
+               <thead>
+               		<tr class="none-border">
+               		  <th>序号</th>
+               		  <th>呼叫开始时间</th>
+					  <th>主叫号码</th>
+					  <th>被叫号码</th>
+					  <th>状态</th>
+					  <th>通话时长</th>
+					  <th>是否录音</th>
+					  <th>录音文件名</th>
+					</tr>
+               </thead>
+               <tbody>
+               		 <tr>
+					  <td>1</td>
+					  <td>2017-1-23 13:23</td>
+					  <td>55001</td>
+					  <td>55002</td>
+					  <td>已应答</td>
+					  <td>12</td>
+					  <td>是</td>
+					  <td>asd2017</td>
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>2017-1-23 13:23</td>
+					  <td>55001</td>
+					  <td>55002</td>
+					  <td>已应答</td>
+					  <td>12</td>
+					  <td>是</td>
+					  <td>asd2017</td>
+					</tr>
+              <tr>
+					  <td>3</td>
+					  <td>2017-1-23 13:23</td>
+					  <td>55001</td>
+					  <td>55002</td>
+					  <td>已应答</td>
+					  <td>12</td>
+					  <td>否</td>
+					  <td>&nbsp;</td>
+					</tr>
+               </tbody>
+               
+                
+              </table>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      
+      <!-- /.row -->
+      
+    </section>
+    <!-- /.content -->
+    
+  </div>
+  
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- Slimscroll -->
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+
+<!-- FastClick -->
+<script src="../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<script src="../style/js/jsnew.js"></script>
+<script src="../style/js/scrollbar.js"></script>
+</body>
+</html>

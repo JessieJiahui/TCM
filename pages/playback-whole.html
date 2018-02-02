@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>全轨迹回放</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style/css/ionicons-2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../plugins/iCheck/all.css"> 
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../style/css/stylenew.css">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <a href="GIS-control.html" class="logo">
+      <span class="logo-mini"></span>
+      <span class="logo-lg"><b>Ultra_</b></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+     	<h1>城市综合管廊安防通信一体化系统</h1>
+      <div class="navbar-custom-menu">
+        
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cloud"></i>28</a>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">2017-5-24</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 周三</a>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 10:23</a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../style/images/user-profi.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Hi,你好</span><i class="fa fa-caret-down"></i>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off text-yellow"></i></a>
+          </li>
+        </ul>
+        
+      </div>
+      <div class="app-link"><a href="appQR.html">APP</a></div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+     	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"></a>
+      <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i><span>集中监控</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="GIS-control.html">GIS监控</a></li>
+            <li ><a href="javascript:void(0)">分仓监控</a></li>
+            <li ><a href="javascript:void(0)">防火区监控</a></li>
+            <li ><a href="javascript:void(0)">报警管理</a></li>
+            <li ><a href="javascript:void(0)">报警规则管理</a></li>
+            <li ><a href="javascript:void(0)">联动规则管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="altermanage.html">
+            <i class="fa fa-bell"></i><span>告警管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-road"></i><span>日常管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="enterapply.html">入廊申请</a></li>
+            <li><a href="partymanage.html">施工单位</a></li>
+            <li><a href="terminalmanage.html">终端管理</a></li>
+            <li><a href="snapshot.html">施工快照</a></li>
+            <li><a href="entermanage.html">出入管理</a></li>
+            <li><a href="message.html">消息历史</a></li>
+            <li><a href="communicate.html">通信管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-road"></i><span>运维管理</span>
+                  <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+              </a><ul class="treeview-menu">
+                  <li><a href="pollingtask.html">巡检任务管理</a> </li>
+                  <li><a href="pollingresult.html">巡检结果管理</a> </li>
+                  <li><a href="pollingitem.html">巡检设置</a> 
+                      <ul class="treeview-menu">
+                          <li><a href="pollingitem.html">巡检条目管理</a> </li>
+                          <li><a href="pollingpoint.html">巡检点管理</a> </li>
+                          <li><a href="pollingroute.html">巡检路线管理</a> </li>
+                          
+                      </ul>
+                  </li>
+                  <li><a href="pollingplan.html">巡检计划管理</a> </li>
+                  <li><a href="pollingtask2.html">巡检任务监测</a> </li>
+              </ul>
+        </li>
+        <li class="treeview">
+          <a href="basicinf.html">
+            <i class="fa fa-cubes"></i><span>管廊基本信息</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+        
+        </li>
+        <li class="treeview ">
+          <a href="dataanalyse.html">
+            <i class="fa fa-pie-chart"></i><span>数据分析</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+ </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-th"></i><span>系统管理</span>
+            <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+          </ul>
+		  </li> 
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-red"></i><span>应急</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-yellow"></i><span>报警</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-blue"></i><span>施工中</span></a></li>
+        <li class="no-border"><a href="#"><i class="fa fa-circle text-green"></i><span>维护中</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12 playback">
+        	<div class="playback-head">
+				<h2>GIS历史轨迹回放 - 全轨迹回放<!--<label>姓名：<s> 张三</s></label>--></h2>
+        		<ul class="period">
+        			<li>开始:<input type="date"><div class="period-time"><input type="text">:<input type="text">:<input type="text"></div></li>
+        			<li>结束:<input type="date"><div class="period-time"><input type="text">:<input type="text">:<input type="text"></div></li>
+        		</ul>
+        		
+			</div>
+  			<div class="timing">10:13:35</div>
+        	<div class="inf">
+        		<ul class="inf-tips">
+        			<li><a href="javascript:void(0)" id="set"><i class="fa fa-cog"></i>设置</a></li>
+					<li><a href="javascript:void(0)" id="find"><i class="fa fa-user-md"></i>找人</a></li>				
+				</ul>
+        	</div>
+        	<div class="gray-content find">
+        		<h3><input type="text" placeholder="输入姓名或账号或标示卡号"></h3>
+        		<div class="find-lst">
+					<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+					<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+					<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+					<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+					<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+     				<div class="content">
+						<label><input type="checkbox"><i class="fa fa-user"></i></label>
+						<ul class="inf3">
+							<li class="f14">张三<i class="fa fa-map-marker"></i><i class="fa fa-commenting" onClick="floatDiv9()"></i></li>
+							<li class="text-yellow">023#防火段 -燃气仓</li>
+							<li>市政燃气一公司 -燃气施工队</li>
+						</ul>
+					</div>
+      			</div>
+				<div class="group-msg"><label><input type="checkbox">全选</label><a href="javascript:(0)" onClick="floatDiv10()">群发消息</a></div>
+      			
+        	</div>
+        	<div class="gray-content set">
+        		<h3 class="text-white">图标显示过滤</h3>
+        		<ul class="inf1">
+        			<li><label class="checkbox-inline"><input type="checkbox">设备隔间</label></li>
+        			<li><label class="checkbox-inline"><input type="checkbox">出入口</label></li>
+        			<li><label class="checkbox-inline"><input type="checkbox">快照</label></li>
+        		</ul>
+        		<div class="border"></div>
+        		<h3 class="text-white">颜色管理</h3>
+        		<ul class="inf2">
+        			<li><i class="fa fa-square text-blue"></i>管理人员</li><li><i class="fa fa-square text-yellow"></i>参观人员</li>
+        			<li><i class="fa fa-square text-red"></i>监控人员</li><li><i class="fa fa-square text-purple"></i>弱电</li>
+        			<li><i class="fa fa-square text-green"></i>供水</li><li><i class="fa fa-square text-black"></i>垃圾</li>
+        			<li><i class="fa fa-square text-light-blue"></i>污水雨水</li><li><i class="fa fa-square text-blue"></i>电力</li>
+        			<li><i class="fa fa-square text-light-blue"></i>电信</li>
+        		</ul>
+        	</div>
+        	<div class="playback-videobox">
+        		<!--<img src="../style/images/map.png" usemap="#Map">-->
+        	</div>
+        	<div class="playback-process">
+        		<div class="toolbar">
+        			<ul class="funcbtn">
+        				<!--<li><s class="rewind-down"></s></li>-->
+        				<li><s class="start"></s></li>
+        				<!--<li><s class="speed"></s></li>-->
+        				<li><s class="cutout"></s></li>	
+        			</ul>
+					<div class="select change-speed">
+            			<p><span>X1</span><a href="javascript:void(0)" class="fa fa-angle-down"></a></p>
+                		<ul>
+                			<li>X2</li>
+                    		<li>X5</li>
+                    		<li>X10</li>
+                    		<li>X60</li>
+                		</ul>
+            		</div>
+        			<div class="process-box" id="bar">
+        				<div class="process-bar" style="width: 40%"><span class="ico1" id="btn"></span><span class="ico2" id="title">39%</span></div>
+        			</div>
+        			<span class="start-time">10:13:13</span>
+        			<span class="end-time">10:33:13</span>
+        	</div>
+        </div>
+        
+      </div>
+	</div>
+      
+      
+      
+      <!-- /.row -->
+      
+    </section>
+    <!-- /.content -->
+    
+  </div>
+  
+
+</div>
+<!-- ./wrapper -->
+
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+
+<script src="../dist/js/demo.js"></script>
+<script src="../style/js/jsnew.js"></script>
+<script>
+	var scale = function (btn,bar,title){
+		this.btn=document.getElementById(btn);
+		this.bar=document.getElementById(bar);
+		this.title=document.getElementById(title);
+		this.step=this.bar.getElementsByTagName("div")[0];
+		this.init();
+	};
+	scale.prototype={
+		init:function (){
+			var f=this,g=document,b=window,m=Math;
+			f.btn.onmousedown=function (e){
+				var x=(e||b.event).clientX;
+				var l=this.offsetLeft;
+				var max=f.bar.offsetWidth-this.offsetWidth;
+				g.onmousemove=function (e){
+					var thisX=(e||b.event).clientX;
+					var to=m.min(max,m.max(-2,l+(thisX-x)));
+					f.btn.style.left=to +'px';
+					f.ondrag(m.round(m.max(0,to/max)*100),to);
+					b.getSelection ? b.getSelection().removeAllRanges() : g.selection.empty();
+				};
+				g.onmouseup=new Function('this.onmousemove=null');
+			};
+		},
+		ondrag:function (pos,x){
+			this.step.style.width=Math.max(0,x)+16+'px';
+			this.title.innerHTML=pos+'%';
+		}
+	}
+	new scale('btn','bar','title');
+</script>
+
+
+</body>
+</html>

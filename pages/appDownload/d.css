@@ -1,0 +1,14 @@
+body{padding: 0;margin: 0;font:1em 'microsoft yahei', Arial, Helvetica, sans-serif;color: #6a6a6a;}
+s{text-decoration: none;}
+p{margin: 0;}
+a{text-decoration: none;}
+
+.d-head{background: #1a1a1b;height: 45px;line-height: 45px; position: relative;color: #fff;text-align: center;font-size: 1.125em;}
+.d-head span{position: absolute;left: 8px;font-size: 1em;}
+.d-head span s{background: url(ico-back.png) no-repeat center;height: 45px;width: 25px;display: inline-block;vertical-align:bottom;background-size: 60%;}
+
+.d-content{text-align: center;width: 100%;padding: 100px 5%;box-sizing: border-box;}
+.d-title{}
+.d-btn{margin: 50px 0;height: 38px;}
+.d-btn a{background:#f8a900;color: #fff;font-size: 1.063em;padding: 8px;display: block;width: 40%;margin: auto;border-radius: 4px;}
+.d-footer{position: absolute;bottom: 40px;left: 0;font-size: 0.5em;width: 100%;}
